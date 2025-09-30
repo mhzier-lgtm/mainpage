@@ -1,0 +1,211 @@
+.page-title {
+  text-align: center;
+  font-family: 'Comic Sans MS', 'Chalkboard SE', 'Arial', sans-serif;
+  font-size: 50px;
+  color: #ff6f61;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  margin-bottom: 40px;
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: default;
+}
+
+
+.page-title:hover {
+  transform: scale(1.1) rotate(-2deg);
+  color: #fff3f0;;
+}
+
+body {
+  background-image: url(img/paper.png);
+  display: flex;
+  flex-direction: column; /* stack header and backpack vertically */
+  justify-content: center;
+  align-items: center;    /* center horizontally */
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+#item1{
+    width: 200px;
+}
+
+#item2{
+    width: 150px;
+}
+
+#item3{
+    width: 270px;
+}
+
+#item4{
+    width: 150px;
+}
+
+#item5{
+    width: 300px;
+}
+
+#aq{
+    width: 80px;
+}
+
+
+.bag-container {
+  position: relative;
+  width: 300px;
+  display: flex;
+  justify-content: center; /* center backpack inside container */
+}
+
+    .bag {
+      width: 180%;
+      transition: transform 0.3s ease;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 2;
+      position: relative;
+    }
+
+    .bag-container:hover .bag {
+      transform: scale(1.05);
+    }
+
+    .item {
+      position: absolute;
+      width: 100px;
+      opacity: 0;
+      transform: scale(0.5) translate(0, 0);
+      transition: all 0.6s ease;
+      z-index: 1;
+    }
+
+    /* Initial positions (on top of the bag) */
+    .item1, .item2, .item3, .item4 {
+      top: 40%;
+      left: 40%;
+    }
+
+    /* Pop out directions */
+    .bag-container:hover .item1 {
+      opacity: 1;
+      transform: scale(1) translate(-350px, -230px); /* top-left */
+    }
+
+    .bag-container:hover .item2 {
+      opacity: 1;
+      transform: scale(1) translate(240px, -230px); /* top-right */
+    }
+
+    .bag-container:hover .item3 {
+      opacity: 1;
+      transform: scale(1) translate(-380px, 120px); /* bottom-left */
+    }
+
+    .bag-container:hover .item4 {
+      opacity: 1;
+      transform: scale(1) translate(270px, 120px); /* bottom-right */
+    }
+
+    .item5 {
+        top: 40%;
+        left: 40%;
+    }
+
+    /* Pop out direction for the new item */
+    .bag-container:hover .item5 {
+        opacity: 1;
+        transform: scale(1) translate(0, -430px); /* straight up */
+    }
+
+.back-button {
+  position: fixed; /* stays in the same place even when scrolling */
+  top: 20px;       /* distance from the top */
+  left: 20px;      /* distance from the left */
+  background-color: #ff6f61; /* pastel cute color */
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-decoration: none; /* remove underline */
+  font-family: 'Comic Sans MS', 'Chalkboard SE', Arial, sans-serif;
+  font-weight: bold;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  z-index: 1000; /* on top of everything else */
+}
+
+.back-button:hover {
+  background-color: #ff9080; 
+  transform: scale(1.1);
+}    
+
+#waterpara{
+font-family: 'Comic Sans MS', 'Chalkboard SE', 'Arial', sans-serif; 
+  font-size: 1.2rem;
+  color: #ff6f61; 
+  background-color: #fff3f0; 
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
+  max-width: 600px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+#mz{
+    width: 400px;
+}
+
+
+#aquaphorpage{
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Arial', sans-serif; 
+  font-size: 1.2rem;
+  color: #ff6f61;
+  background-color: #fff3f0; 
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
+  max-width: 600px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+#pencilpage{
+   font-family: 'Comic Sans MS', 'Chalkboard SE', 'Arial', sans-serif; 
+  font-size: 1.2rem;
+  color: #ff6f61; 
+  background-color: #fff3f0; 
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
+  max-width: 600px;
+  text-align: center;
+  line-height: 1.5;
+} 
+
+#plannerpage{
+   font-family: 'Comic Sans MS', 'Chalkboard SE', 'Arial', sans-serif; 
+  font-size: 1.2rem;
+  color: #ff6f61; 
+  background-color: #fff3f0; 
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
+  max-width: 600px;
+  text-align: center;
+  line-height: 1.5; 
+}
+
+#podspage{
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Arial', sans-serif; 
+  font-size: 1.2rem;
+  color: #ff6f61; 
+  background-color: #fff3f0;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
+  max-width: 600px;
+  text-align: center;
+  line-height: 1.5;
+}
+
