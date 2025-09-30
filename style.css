@@ -9,6 +9,9 @@
   cursor: default;
 }
 
+#musicpic{
+  width: 30%;
+}
 
 .page-title:hover {
   transform: scale(1.1) rotate(-2deg);
